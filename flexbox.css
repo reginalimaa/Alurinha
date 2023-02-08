@@ -8,3 +8,28 @@
     display: flex;
 }
 
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin-right: 5%;
+    justify-content: space-around;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}

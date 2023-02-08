@@ -28,8 +28,30 @@
 
 .rodapePrincipal-navMap-list {
     display: flex;
+   /* flex-direction: column;
+    flex-wrap: wrap;  para a coluna respeitar a altura do pai e quebrar para prox, linha */
+    flex-flow: column wrap; /* Atalho para colocar alinhar os elementos filho do pai em colunas e que quebrem para próxima linha quando atingir a altera do elemento pai*/
+    height: 250px;
 }
 
 .rodapePrincipal-contatoForm-fieldset {
     display: flex;
+}
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+    margin: 1%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n) { /* tira a margem dos elementos que estão numa posição divisivel por quatro*/
+    margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1) { /* tira a margem dos elementos que estão numa posição divisivel por quatro + 1, ou seja, o elemento que vem em sequida*/
+    margin-left: 0;
 }

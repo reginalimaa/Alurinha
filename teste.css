@@ -1,0 +1,55 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    background: #3ffe3f;
+    height: 100px;
+    width: 23%;
+    
+
+    margin: 1%;
+
+    text-align: center;
+}
+
+.box:nth-child(4n) {
+    margin-right: 0; /*Direita*/
+}
+
+.box:nth-child(4n+1) {
+    margin-left: 0; /*Esquerdan*/
+}
+
+.grid1 {
+    display: flex;
+    flex-wrap: wrap;    
+}
+  
+.course {
+    height: 100px;
+    width: 23%;
+    margin: 1%;
+
+    background: blue;
+    border: solid black;
+}
+
+.course:nth-child(4n) {
+    margin-right: 0;
+}
+
+.course:nth-child(4n+1) {
+    margin-left: 0;
+}

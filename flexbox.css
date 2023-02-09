@@ -55,3 +55,61 @@
 .conteudoPrincipal-cursos-link:nth-child(4n+1) { /* tira a margem dos elementos que estão numa posição divisivel por quatro + 1, ou seja, o elemento que vem em sequida*/
     margin-left: 0;
 }
+
+.videoSobre .container {
+    display: flex;
+}
+
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2; /* fala para os itens se ajustar no espaço que sobre no elemento pai(container)*/
+}
+
+.videoSobre-button {
+    width: 100%;
+    align-items: center;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
+
+.videoSobre-video {
+    flex-grow: 1; /*Distribui os espaços vazios entres os flex-itens)*/
+    flex-shrink: 2; /*Diminui o video duas vezes mais em relação ao intens do lado)*/
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .cabecalhoPrincipal .container{
+        flex-direction: column;  
+        align-items: initial;
+        text-align: center;
+    }
+
+    .cabecalhoPrincipal-nav{
+        flex-direction: column;
+    }
+
+    .conteudoPrincipal-cursos-link {
+        width: 100%;
+    }
+
+    .cabecalhoPrincipal-nav-link-app { /* colocar o ultimo item no nav na primeira linha da coluna*/
+        order: -1; 
+    }
+
+    .videoSobre .container{
+        flex-direction: column; /*Ajustar os intens em coluna*/
+    }
+
+    .videoSobre-video {
+        margin: 0 auto;
+    }
+}
+
+
+
